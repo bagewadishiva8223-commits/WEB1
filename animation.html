@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            width: 600px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+            animation: change 2s ease infinite;
+        }
+
+        @keyframes change{
+            from{
+                background-color: aqua;
+            }to{
+                background-color: blueviolet;
+            }
+            /* 0%{
+                background-color: aliceblue;
+            }
+            20%{
+                background-color: antiquewhite;
+
+            } */
+        }
+
+        .ball{
+            animation: bounce 3s cubic-bezier(0, 0, 1,-0.41) infinite;
+        }
+
+        @keyframes bounce{
+            0%{
+                transform: translate(0);
+            }
+            50%{
+                transform: translate(500px,200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="ball">
+        <img height="200px" width="200px"  src="https://media.gettyimages.com/id/93889291/photo/football-used-isolated-old-style-soccer-ball-on-white-background.jpg?s=612x612&w=gi&k=20&c=CsFN8SkM0XAx42MPgwnLPYoxRh78CURbhqLdGLPGFHo=" alt="">
+    </div>
+</body>
+</html>
