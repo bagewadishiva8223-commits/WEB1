@@ -1,0 +1,5 @@
+// console.log("welcome to the bar")
+// alert("this is alert")
+// console.warn("this is warn")
+// console.error("this is console error")
+confirm("this is confirm")
